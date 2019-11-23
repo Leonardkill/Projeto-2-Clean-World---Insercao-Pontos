@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Inserir Pontuacao</string>
+    <string name="inserir_pontos">Inserção de pontos</string>
+    <string name="cpf">Digite seu cpf</string>
+    <string name="pontos_inserir">Quantidade de pontos a ser inserido</string>
+    <string name="registrar_pontos">Inserir Pontos</string>
+    <string name="login">Efetua login para inserção pontos</string>
+    <string name="email">Insira seu email</string>
+    <string name="senha">Insira sua senha</string>
+    <string name="entrar">Entrar</string>
+</resources>

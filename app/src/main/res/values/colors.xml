@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="roxo_clean">#696969</color>
+    <color name="roxo">#800080</color>
+    <color name="rosa">#FFC0CB</color>
+    <color name="verde_clean">#c6d933</color>
+    <color name="cinza">#696969</color>
+    <color name="preto">#000000</color>
+    <color name="gelo">#D6D4D4</color>
+    <color name="amarelo_slide">#ffff00</color>
+    <color name="laranja_slide">#ffc000</color>
+    <color name="cinza_escuro">#a9a9a9</color>
+    <color name="branco">#fff</color>
+</resources>

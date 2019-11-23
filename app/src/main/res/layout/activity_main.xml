@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gelo"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="223dp"
+        android:layout_height="228dp"
+        android:layout_marginLeft="130dp"
+        app:srcCompat="@drawable/logo_cw" />
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/indigo_daisy"
+        android:text="@string/inserir_pontos"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+
+    <EditText
+        android:id="@+id/digitar_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/cpf"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/digitar_pontos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/pontos_inserir"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPassword"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+        <Button
+            android:id="@+id/btn_inserir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="@string/registrar_pontos"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
