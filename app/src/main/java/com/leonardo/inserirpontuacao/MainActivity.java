@@ -45,13 +45,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 final String ccpf =digitar_CPF.getText().toString();
-                final int ppontos = Integer.valueOf(digitar_PONTOS.getText().toString());
+                final int[] ppontos = {Integer.valueOf(digitar_PONTOS.getText().toString())};
 
                 ref.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("cpf").exists()) {
-                            ref.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("pontuacao").setValue(ppontos);
+                        if (dataSnapshot.child("Users").child(id).child("cpf").exists()) {
+                            ppontos[0] += Integer.valueOf(String.valueOf(dataSnapshot.child("Users").child(id).child("pontuacao").getValue()));
+                            ref.child("Users").child(id).child("pontuacao").setValue(ppontos[0]);
                             Toast.makeText(getBaseContext(), "Pontos inseridos com sucesso", Toast.LENGTH_SHORT).show();
 
                         }
