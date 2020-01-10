@@ -51,17 +51,11 @@ public class login_activity extends AppCompatActivity {
                 else {
                     Toast.makeText(login_activity.this,"Falha no Login" , Toast.LENGTH_SHORT).show();
                 }
-
-
-
             }
         };
-
             btnLogar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-
                     String email = emailId.getText().toString();
                     String pwd = password.getText().toString();
                     if(email.isEmpty()) {
@@ -83,7 +77,7 @@ public class login_activity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(!task.isSuccessful()){
-                                    Toast.makeText(login_activity.this , "Erro de login , por favor logue novamente" , Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(login_activity.this , "Erro de login , por favor tent novamente" , Toast.LENGTH_SHORT).show();
                                 }
                                 else  {
                                     Intent intToMain = new Intent(login_activity.this , MainActivity.class);
@@ -95,13 +89,8 @@ public class login_activity extends AppCompatActivity {
                     else {
                         Toast.makeText(login_activity.this , "Ocorreu um erro!" , Toast.LENGTH_SHORT).show();
                     }
-
-
-
                 }
             });
-
-
     }
 
     @Override
